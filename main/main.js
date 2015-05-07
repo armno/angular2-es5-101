@@ -6,7 +6,7 @@ AppComponent.annotations = [
 		selector: 'my-app'
 	}),
 	new angular.View({
-		template: '<h1>Hello my first Angular 2 App</h1>'
+		templateUrl: 'main/main.html'
 	})
 ];
 
