@@ -1,0 +1,9 @@
+{
+  "name": "angular2-es5-101",
+  "devDependencies": {
+    "http-server": "^0.8.0"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.21"
+  }
+}
