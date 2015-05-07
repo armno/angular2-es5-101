@@ -1,11 +1,12 @@
-function DisplayComponent() {
+function DisplayComponent(friends) {
 	this.myName = 'Armno';
-	this.friends = ['Func', 'Class', 'Meh', 'Yo', 'Node'];
+	this.friends = friends.names;
 }
 
 DisplayComponent.annotations = [
 	new angular.Component({
-		selector: 'display'
+		selector: 'display',
+		injectables: [FriendsService]
 	}),
 	new angular.View({
 		templateUrl: 'profile/profile.html',
@@ -15,6 +16,8 @@ DisplayComponent.annotations = [
 		]
 	})
 ];
+
+DisplayComponent.parameters = [[FriendsService]];
 
 document.addEventListener('DOMContentLoaded', function() {
 	angular.bootstrap(DisplayComponent);
