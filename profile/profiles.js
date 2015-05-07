@@ -1,6 +1,7 @@
 function DisplayComponent(friends) {
 	this.myName = 'Armno';
 	this.friends = friends.names;
+	this.sayFirstFriend = friends.first;
 }
 
 DisplayComponent.annotations = [
