@@ -27,3 +27,10 @@ Learning Angular 2 from [the official guide on angular.io](https://angular.io/do
 - Event binding using `(event)=func` syntax looks weird to me, as well as `#var`. But it does not difficult to understand at all.
 - `doneTyping` function passes event object `$event` to the controller. I think this is not a good practice, especially with testing.
 - Just for brevity or maybe that's an easy way to clear the value in `<input>` element from the controller. In `addTodo` function, I cannot make it clear the value in `<input>` element using data binding yet. (since `#var` is a local variable to the view.)
+
+### 4. Making components
+
+- I think it looks like Custom Elements in Web Components or React if you have tried it before. The way you create a component and use another component is the same.
+- The child component is injected to the parent component in `directives` config array.
+- The child component **does not** require to bootstrap. Just create the component and make it availabe to ParentComponent, which means you have to load `child.js` component **before** initializing the parent component.
+- But if you bootstrap the child component, it will still work. Only some error messages are thrown to the console. So you shouldn't!
