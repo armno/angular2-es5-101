@@ -18,10 +18,10 @@ function TodoListComponent() {
 }
 
 TodoListComponent.annotations = [
-	new angular.Component({
+	new angular.ComponentAnnotation({
 		selector: 'todo-list'
 	}),
-	new angular.View({
+	new angular.ViewAnnotation({
 		templateUrl: 'todo/todo.html',
 		directives: [
 			angular.For
