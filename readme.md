@@ -1,8 +1,6 @@
 # angular2-es5
 
-Learning Angular 2 from [the official guide on angular.io](https://angular.io/docs/js/latest/guide/). ES5 version.
-
-## random notes taken
+Learning Angular 2 from [the official guide on angular.io](https://angular.io/docs/js/latest/guide/). ES5 version. Here are random notes taken.
 
 ### 1. Getting started
 
@@ -34,3 +32,7 @@ Learning Angular 2 from [the official guide on angular.io](https://angular.io/do
 - The child component is injected to the parent component in `directives` config array.
 - The child component **does not** require to bootstrap. Just create the component and make it availabe to ParentComponent, which means you have to load `child.js` component **before** initializing the parent component.
 - But if you bootstrap the child component, it will still work. Only some error messages are thrown to the console. So you shouldn't!
+
+Although there are still mistakes in these tutorials, I still learned some good things from them.
+
+-Armno, 07.05.2015
