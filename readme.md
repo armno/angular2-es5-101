@@ -24,7 +24,8 @@ Learning Angular 2 from [the official guide on angular.io](https://angular.io/do
 - The final code example injects `angular.If` but it is not really used. You can remove it from `directives` config array.
 - Event binding using `(event)=func` syntax looks weird to me, as well as `#var`. But it does not difficult to understand at all.
 - `doneTyping` function passes event object `$event` to the controller. I think this is not a good practice, especially with testing.
-- ~Just for brevity or maybe that's an easy way to clear the value in `<input>` element from the controller. In `addTodo` function, I cannot make it clear the value in `<input>` element using data binding yet. (since `#var` is a local variable to the view.)~ [Taken from Microsoft/ngconf2015demo](https://github.com/Microsoft/ngconf2015demo) repo, pass `todo` to the controller and set its value to an empty string works.
+- <del>Just for brevity or maybe that's an easy way to clear the value in `<input>` element from the controller. In `addTodo` function, I cannot make it clear the value in `<input>` element using data binding yet. (since `#var` is a local variable to the view.)</del>
+- Taken from [Microsoft/ngconf2015demo](https://github.com/Microsoft/ngconf2015demo) repo, pass `todo` to the controller and set its value to an empty string works.
 
 ### 4. Making components
 
