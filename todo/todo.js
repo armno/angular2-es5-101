@@ -6,13 +6,13 @@ function TodoListComponent() {
 	];
 
 	this.addTodo = function(todo) {
-		this.todos.push(todo);
+		this.todos.push(todo.value);
+		todo.value = '';
 	};
 
-	this.doneTyping = function($event) {
+	this.doneTyping = function($event, todotext) {
 		if ($event.which === 13) {
-			this.addTodo($event.target.value);
-			$event.target.value = null;
+			this.addTodo(todotext);
 		}
 	};
 }

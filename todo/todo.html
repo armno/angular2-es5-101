@@ -5,5 +5,5 @@
 	</li>
 </ul>
 
-<input type="text" #todotext (keyup)="doneTyping($event)">
-<button (click)="addTodo(todotext.value)">Add</button>
+<input type="text" #todotext (keyup)="doneTyping($event, todotext)">
+<button (click)="addTodo(todotext)">Add</button>
